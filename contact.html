@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <header class="site-header glass">
+      <a class="brand" href="index.html"><span class="logo">S</span> Portofolio</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><i class="ri-menu-3-line"></i></button>
+      <nav class="site-nav" data-collapsed="true">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="cta" href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-head">
+          <h1>Contact</h1>
+          <p>Silakan tinggalkan pesan melalui form di bawah.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="card glass">
+            <h2>Kirim Pesan</h2>
+            <form id="contact-form" class="form" novalidate>
+              <div class="field">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+              </div>
+              <div class="field">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+              </div>
+              <button type="submit" class="btn primary"><i class="ri-send-plane-line"></i> Kirim</button>
+              <p class="form-hint">UI saja. Tidak ada submit ke server.</p>
+            </form>
+          </div>
+
+          <div class="card glass contact-info">
+            <h2>Info Kontak</h2>
+            <ul>
+              <li><i class="ri-mail-line"></i> 2005syaiful@gmail.com</li>
+              <li><i class="ri-github-line"></i> github.com/bongs20</li>
+              <li><i class="ri-linkedin-line"></i> linkedin.com/in/muhammad-syaiful-2539942a1/</li>
+              <li><i class="ri-map-pin-2-line"></i> Makassar, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass">
+      <p>© <span id="year"></span> Muhammad Syaiful. Mari terhubung.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

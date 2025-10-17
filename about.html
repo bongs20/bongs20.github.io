@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio | About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <header class="site-header glass">
+      <a class="brand" href="index.html"><span class="logo">S</span> Portofolio</a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><i class="ri-menu-3-line"></i></button>
+      <nav class="site-nav" data-collapsed="true">
+        <a href="index.html">Beranda</a>
+        <a href="about.html" aria-current="page">About Me</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section narrow">
+        <article class="profile-card glass">
+          <img class="avatar" src="assets/img/profile.png" alt="Foto profil" />
+          <div>
+            <h1>About Me</h1>
+            <p>
+                Sekarang saya adalah mahasiswa di Universitas Negeri Makassar, jurusan Teknik Informatika.
+                Saya memiliki minat yang besar dalam pemrograman dan teknologi informasi.
+                Saya senang belajar hal-hal baru dan terus mengembangkan keterampilan saya di bidang ini.
+            </p>
+            <ul class="quick-facts">
+              <li><i class="ri-map-pin-2-line"></i> Makassar, Indonesia</li>
+              <li><i class="ri-briefcase-line"></i> Mahasiswa</li>
+              <li><i class="ri-macbook-line"></i> Offline</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Keahlian</h2>
+          <p>Teknologi yang sering saya gunakan.</p>
+        </div>
+        <div class="grid skills">
+          <div class="chip glass">HTML5</div>
+          <div class="chip glass">CSS3</div>
+          <div class="chip glass">JavaScript</div>
+          <div class="chip glass">C++</div>
+          <div class="chip glass">Python</div>
+          <div class="chip glass">C</div>
+          <div class="chip glass">Git</div>
+          <div class="chip glass">Java</div>
+          <div class="chip glass">Figma</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Pengalaman</h2>
+          <p>Ringkasan perjalanan profesional saya.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item glass">
+            <span class="time">2024 — Sekarang</span>
+            <h3>Mahasiswa, Universitas Negeri Makassar</h3>
+            <p>Saat ini saya sedang menempuh pendidikan di Universitas Negeri Makassar dengan fokus pada Teknik Informatika.</p>
+          </div>
+          <div class="timeline-item glass">
+            <span class="time">2023 — 2024</span>
+            <h3>Electronics Component Sales</h3>
+            <p>Menjual komponen elektronik secara online dan offline.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass">
+      <p>© <span id="year"></span> Muhammad Syaiful. Terima kasih sudah berkunjung.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

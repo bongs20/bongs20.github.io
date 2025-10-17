@@ -1,0 +1,89 @@
+<!doctype html>
+    <html lang="id">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>Portofolio | Beranda</title>
+            <meta name="description" content="Portofolio pribadi dengan desain modern dan efek kaca (glassmorphism)." />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+            <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+            <link rel="stylesheet" href="assets/css/styles.css" />
+        </head>
+        <body>
+            <canvas id="bg" aria-hidden="true"></canvas>
+            <header class="site-header glass">
+            <a class="brand" href="index.html"><span class="logo">S</span> Portofolio</a>
+            <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><i class="ri-menu-3-line"></i></button>
+            <nav class="site-nav" data-collapsed="true">
+                <a href="index.html" aria-current="page">Beranda</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Contact</a>
+                <a class="cta" href="login.html">Login</a>
+            </nav>
+            </header>
+
+            <main>
+            <section class="hero">
+                <div class="hero-card glass">
+                <p class="eyebrow">Halo, saya</p>
+                <h1 class="title">Muhammad Syaiful</h1>
+                <p class="subtitle">Mahasiswa • IT Enthusiast • Lifelong Learner</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="about.html"><i class="ri-user-line"></i> Kenali Saya</a>
+                    <a class="btn" href="contact.html"><i class="ri-send-plane-line"></i> Hubungi</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/bongs20" aria-label="GitHub"><i class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-syaiful-2539942a1/" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                    <a href="mailto:2005syaiful@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+                </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                <h2>My Kisah</h2>
+                <p>Beberapa hal yang saya banggakan.</p>
+                </div>
+                <div class="grid">
+                <article class="card glass">
+                    <h3>Pengelolaan Database Toko</h3>
+                    <p>Website dinamis dengan fitur CRUD menggunakan PHP dan MySQL.</p>
+                    <a class="link" href="https://github.com/bongs20/Simple-CRUD-Market-Database">Lihat detail <i class="ri-arrow-right-up-line"></i></a>
+                </article>
+                <article class="card glass">
+                    <h3>Kepanitiaan Pertama Saya</h3>
+                    <p>Ikut aktif dalam kegiatan mahasiswa, RAKER nih boss.</p>
+                    <a class="link" href="https://www.instagram.com/p/DHiLOqOyf8l/">Lihat detail <i class="ri-arrow-right-up-line"></i></a>
+                </article>
+                <article class="card glass">
+                    <h3>Menjadi Mahasiswa UNM</h3>
+                    <p>Universitas Negeri Makassar kampus tercinta ku</p>
+                    <a class="link" href="https://unm.ac.id/">Lihat detail <i class="ri-arrow-right-up-line"></i></a>
+                </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                <h2>Langganan Email</h2>
+                <p>Dapatkan update terbaru dari saya melalui email.</p>
+                </div>
+                <form class="glass form-inline" id="subscribe-form" aria-label="Form langganan email" novalidate>
+                <label class="sr-only" for="subscribe-email">Email</label>
+                <input type="email" id="subscribe-email" name="email" placeholder="nama@email.com" required />
+                <button type="submit" class="btn primary"><i class="ri-mail-open-line"></i> Langganan</button>
+                <p class="form-hint">Hanya tampilan. Tidak ada pengiriman data.</p>
+                </form>
+            </section>
+            </main>
+
+            <footer class="site-footer glass">
+            <p>© <span id="year"></span> Muhammad Syaiful. Dibuat dengan ❤️ dan glassmorphism.</p>
+            </footer>
+
+            <script src="assets/js/main.js"></script>
+        </body>
+    </html>
